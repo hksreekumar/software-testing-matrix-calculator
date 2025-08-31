@@ -5,8 +5,8 @@ This is the base project for implementing tests and therefore for training purpo
 
 ```bash
 cd <PROJECT_DIR>
-py -m pip install -r requirements.txt
-py main.py --help
+python -m pip install -r requirements.txt
+python main.py --help
 ```
 
 ## Testing
@@ -15,14 +15,14 @@ py main.py --help
 <strong>Unit testing</strong>
 ```bash
 cd <PROJECT_DIR>
-py -m pytest test/unit_tests
+python -m pytest test/unit_tests
 ```
 
 <strong>Unit testing with coverage</strong>
 ```bash
 cd <PROJECT_DIR>
-py -m coverage run --source=./source -m pytest test/unit_tests
-py -m coverage report -m 
+python -m coverage run --source=./source -m pytest test/unit_tests
+python -m coverage report -m 
 ```
 
 ### Acceptance testing with PyTest
@@ -30,14 +30,14 @@ py -m coverage report -m
 <strong>Acceptance testing</strong>
 ```bash
 cd <PROJECT_DIR>
-py -m pytest test/acceptance_tests
+python -m pytest test/acceptance_tests
 ```
 
 <strong>Acceptance testing with coverage</strong>
 ```bash
 cd <PROJECT_DIR>
-py -m coverage run --source=./source -m pytest test/acceptance_tests
-py -m coverage report -m 
+python -m coverage run --source=./source -m pytest test/acceptance_tests
+python -m coverage report -m 
 ```
 
 ### Code quality tests with PyLint
@@ -45,7 +45,7 @@ py -m coverage report -m
 PyLint configurations are available in `.pylintrc`
 ```bash
 cd <PROJECT_DIR>
-py -m pylint ./source
+python -m pylint ./source
 ```
 
 ## License
